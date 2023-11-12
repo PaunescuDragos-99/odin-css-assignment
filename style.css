@@ -23,6 +23,8 @@ a {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 20px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .first-content,
@@ -36,14 +38,22 @@ a {
 
 .third-content {
     background-color: #134799;
+    background-image: url(images/gojo-domain-expansion.jpg);
+    background-attachment:fixed;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    flex-direction: column;
 }
+
+
 
 .fourth-content {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
-    background-color: #134799;
+    background-color: rgb(19, 41, 58)
+    
 }
 
 .modal-info {
@@ -52,7 +62,6 @@ a {
     flex-shrink: 1;
     justify-content: flex-start;
     width: 600px;
-    margin-left: -140px;
 }
 
 .modal-header {
@@ -72,15 +81,24 @@ a {
     padding-bottom: 32px;
 }
 
-.button {
+.button,
+.button2 {
     background-color: #3882F6;
     border: none;
     text-decoration: none;
     text-align: center;
     border-radius: 4px;
+    font-weight: 400;
+}
+
+.button{
     width: 80px;
     height: 27px;
-    font-weight: 400;
+}
+
+.button2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 .second-content{
@@ -101,6 +119,11 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 16px;
+    color: yellow;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0c254d;
+    background-color: #3882F6;
 }
 
 p {
@@ -114,8 +137,8 @@ p {
     align-items: center;
     gap: 16px;
     padding: 8px;
-    padding-left: 240px;
-    padding-right: 400px;
+    padding-left: 320px;
+    padding-right: 320px;
 }
 
 .video {
@@ -128,8 +151,7 @@ p {
     position:fixed;
     right: 0;
     bottom: 0;
-    z-index: -1;
-    
+    z-index: -1;   
 }
 
 .characters {
@@ -151,4 +173,43 @@ p {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.third-content-info {
+    display: flex;
+    color: yellow;
+    border:none;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: #0c254d;
+    -webkit-text-stroke-width: 3px;
+    gap: 0px;
+}
+
+.under-info {
+    display: flex;
+    color: yellow;
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: #0c254d;
+    -webkit-text-stroke-width: 0.7px;
+}
+
+.fourth-content-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #163568;
+    padding: 32px;
+    border-radius: 16px;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: inset 100px 0 0 0 rgb(11, 184, 175);
 }
